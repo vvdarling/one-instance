@@ -1,0 +1,10 @@
+host_addr 10.208.129.222
+host_netmask 255.255.255.0
+host_gateway 10.208.129.254
+runtime_kthreads 4
+runtime_guaranteed_kthreads 0
+runtime_spinning_kthreads 0
+host_mac 02:ca:96:c9:0a:0b
+runtime_priority be
+static_arp 10.208.129.220 02:37:a5:db:9d:27
+static_arp 10.208.129.221 02:49:02:55:89:94
