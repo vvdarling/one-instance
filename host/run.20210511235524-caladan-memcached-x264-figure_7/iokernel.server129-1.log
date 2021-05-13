@@ -1,0 +1,109 @@
+1620748575 CPU 00| <6> entering 'iokernel' init phase
+1620748575 CPU 00| <6> init -> base
+1620748575 CPU 00| <5> cpu: detected 160 cores, 4 nodes
+1620748575 CPU 00| <5> time: detected 2400 ticks / us
+1620748575 CPU 00| <6> init: entering 'early' init
+1620748575 CPU 00| <6> init: entering 'normal' init
+1620748575 CPU 00| <6> init: entering 'late' init
+1620748575 [  0.010325] CPU 00| <6> init -> ksched
+1620748575 [  0.010393] CPU 00| <6> init -> sched
+1620748575 [  0.010395] CPU 00| <5> sched: CPU configuration...
+1620748575 	node 0: [0,80][1,81][2,82][3,83][4,84][5,85][6,86][7,87][8,88][9,89][10,90][11,91][12,92][13,93][14,94][15,95][16,96][17,97][18,98][19,99]
+1620748575 	node 1: [20,100][21,101][22,102][23,103][24,104][25,105][26,106][27,107][28,108][29,109][30,110][31,111][32,112][33,113][34,114][35,115][36,116][37,117][38,118][39,119]
+1620748575 	node 2: [40,120][41,121][42,122][43,123][44,124][45,125][46,126][47,127][48,128][49,129][50,130][51,131][52,132][53,133][54,134][55,135][56,136][57,137][58,138][59,139]
+1620748575 	node 3: [60,140][61,141][62,142][63,143][64,144][65,145][66,146][67,147][68,148][69,149][70,150][71,151][72,152][73,153][74,154][75,155][76,156][77,157][78,158][79,159]
+1620748575 [  0.010818] CPU 00| <5> sched: dataplane on 82, control on 2
+1620748575 [  0.010821] CPU 00| <6> init -> simple
+1620748575 [  0.010830] CPU 00| <6> init -> numa
+1620748575 [  0.010831] CPU 00| <6> init -> ias
+1620748575 IBRS and IBPB supported  : yes
+1620748575 STIBP supported          : yes
+1620748575 Spec arch caps supported : no
+1620748575 IBRS enabled in the kernel   : no
+1620748575 STIBP enabled in the kernel  : no
+1620748575 Socket 0: 2 memory controllers detected with total number of 6 channels. 3 QPI ports detected. 2 M2M (mesh to memory) blocks detected. 0 Home Agents detected. 3 M3UPI blocks detected.
+1620748575 Socket 1: 2 memory controllers detected with total number of 6 channels. 3 QPI ports detected. 2 M2M (mesh to memory) blocks detected. 0 Home Agents detected. 3 M3UPI blocks detected.
+1620748575 Socket 2: 2 memory controllers detected with total number of 6 channels. 3 QPI ports detected. 2 M2M (mesh to memory) blocks detected. 0 Home Agents detected. 3 M3UPI blocks detected.
+1620748575 Socket 3: 2 memory controllers detected with total number of 6 channels. 3 QPI ports detected. 2 M2M (mesh to memory) blocks detected. 0 Home Agents detected. 3 M3UPI blocks detected.
+1620748575 EAL: Detected 128 lcore(s)
+1620748575 EAL: Detected 4 NUMA nodes
+1620748575 EAL: Multi-process socket /var/run/dpdk/rte/mp_socket
+1620748575 EAL: Selected IOVA mode 'PA'
+1620748575 EAL: No free hugepages reported in hugepages-2048kB
+1620748575 EAL: No free hugepages reported in hugepages-2048kB
+1620748575 EAL: No free hugepages reported in hugepages-2048kB
+1620748575 EAL: No available hugepages reported in hugepages-1048576kB
+1620748575 [  0.100287] CPU 00| <6> init -> control
+1620748575 [  0.316068] CPU 00| <5> control: spawning control thread
+1620748575 [  0.316170] CPU 00| <6> init -> dpdk
+1620748575 EAL: Probing VFIO support...
+1620748575 [  0.625218] CPU 82| <6> init -> rx
+1620748575 [  0.756592] CPU 82| <6> init -> tx
+1620748575 [  0.765476] CPU 82| <6> init -> dp_clients
+1620748575 [  0.765501] CPU 82| <6> init -> dpdk_late
+1620748575 [  0.766651] CPU 82| <5> dpdk: driver: net_tap port 0 MAC: ba 9c fd bc b7 58
+1620748575 [  0.766740] CPU 82| <6> init -> hw_timestamp
+1620748575 [  0.766742] CPU 82| <5> main: core 82 running dataplane. [Ctrl+C to quit]
+1620774191 [  0.776796] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [  0.776807] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 16
+1620774191 [  0.776811] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 16
+1620774191 [  0.832868] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [  0.832876] CPU 82| <6> rx: rx packet with MAC 33 33 ff bc b7 58
+1620774191 [  0.832879] CPU 82| <6> rx: unhandled packet with MAC 33 33 ff bc b7 58
+1620774191 [  1.072782] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [  1.072791] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 16
+1620774191 [  1.072793] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 16
+1620774191 [  1.840874] CPU 82| <6> rx: received 2 packets on port 0
+1620774191 [  1.840881] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 16
+1620774191 [  1.840884] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 16
+1620774191 [  1.840888] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 02
+1620774191 [  1.840890] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 2
+1620774191 [  2.064779] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [  2.064789] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 16
+1620774191 [  2.064792] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 16
+1620774191 [  5.652782] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [  5.652790] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 02
+1620774191 [  5.652794] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 2
+1620774191 [ 13.072748] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [ 13.072759] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 02
+1620774191 [ 13.072762] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 2
+1620774191 [ 27.664946] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [ 27.664954] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 02
+1620774191 [ 27.664957] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 2
+1620774191 [ 57.361295] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [ 57.361305] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 02
+1620774191 [ 57.361308] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 2
+1620774191 [116.753920] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [116.753928] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 02
+1620774191 [116.753932] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 2
+1620774191 [239.634993] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [239.635018] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 02
+1620774191 [239.635022] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 2
+1620774191 [483.348243] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [483.348263] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 02
+1620774191 [483.348267] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 2
+1620774191 [958.484798] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [958.484819] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 02
+1620774191 [958.484823] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 2
+1620774191 [1908.755110] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [1908.755131] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 02
+1620774191 [1908.755134] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 2
+1620774191 [3858.440132] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [3858.440150] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 02
+1620774191 [3858.440155] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 2
+1620774191 [7266.308975] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [7266.308995] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 02
+1620774191 [7266.308999] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 2
+1620774191 [10674.172362] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [10674.172380] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 02
+1620774191 [10674.172384] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 2
+1620774191 [14606.310464] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [14606.310485] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 02
+1620774191 [14606.310488] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 2
+1620774191 [18669.534078] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [18669.534087] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 02
+1620774191 [18669.534092] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 2
+1620774191 [22077.396688] CPU 82| <6> rx: received 1 packets on port 0
+1620774191 [22077.396706] CPU 82| <6> rx: rx packet with MAC 33 33 00 00 00 02
+1620774191 [22077.396710] CPU 82| <6> rx: unhandled packet with MAC 33 33 0 0 0 2
+1620774191 [25616.333986] CPU 82| <6> rx: received 1 packets on port 0

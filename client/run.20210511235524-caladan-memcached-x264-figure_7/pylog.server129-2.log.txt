@@ -1,4 +1,0 @@
-Tuning machine latency settings
-[38188]: launched {sudo /home/hzw/caladan-all//caladan/iokerneld simple 2,4,6,8,10,12  2>&1 | ts %s > iokernel.server129-2.log}
-[38207]: launched {ulimit -S -c 0 &&  exec numactl -N 0 -m 0   ./synthetic --config 0-server129-2.memcached.config 10.208.129.220:5053  --output=buckets --protocol memcached --mode runtime-client --threads 400 --runtime 20 --barrier-peers 1 --barrier-leader server129-2  --mean=842 --distribution=zero --mpps=12.0 --samples=20 --transport tcp --start_mpps 0.0 --nvalues=32000000  > 0-server129-2.memcached.out 2> 0-server129-2.memcached.err}
-[38207] is done, ret = -6

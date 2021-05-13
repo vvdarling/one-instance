@@ -1,5 +1,0 @@
-1620748577 CPU 81| <5> cpu: detected 160 cores, 4 nodes
-1620748577 CPU 81| <5> time: detected 2399 ticks / us
-1620748577 CPU 81| <2> Could not intialize memory. Please ensure that hugepages are enabled/available.
-1620748577 CPU 81| <2> base library global init failed, ret = -12
-1620748577 failed to start runtime

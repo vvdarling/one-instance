@@ -1,5 +1,0 @@
-Tuning machine latency settings
-[15909]: launched {sudo /home/hzw/caladan-all//caladan/iokerneld ias 2,4,6,8,10,12  2>&1 | ts %s > iokernel.server129-1.log}
-[15931]: launched {ulimit -S -c 0 &&  exec numactl -N 0 -m 0   /home/hzw/caladan-all//memcached/memcached memcached.config -t 4 -U 5053 -p 5053 -c 32768 -m 32000 -b 32768 -o hashpower=25,no_hashexpand,lru_crawler,lru_maintainer,idle_timeout=0,slab_reassign  > memcached.out 2> memcached.err}
-[15933]: launched {ulimit -S -c 0 && SHMKEY=111 exec numactl -N 0 -m 0   /home/hzw/caladan-all//parsec/pkgs/apps/x264/inst/amd64-linux.gcc-shenango/bin/x264 x264.config --quiet --qp 20 --partitions b8x8,i4x4 --ref 5 --direct auto --b-pyramid --weightb --mixed-refs --no-fast-pskip --me umh --subme 7 --analyse b8x8,i4x4 --threads 128 -o /dev/null ~friedj/eledream_1920x1080_512.y4m |& ts %s > x264.out 2> x264.err}
-[15949]: launched {  stdbuf -i0 -o0 -e0 numactl -N 1 -m all    /home/hzw/caladan-all//caladan/apps/netbench/stress_shm_query 111:100000:1  > x264_shm_query.out 2>&1}
